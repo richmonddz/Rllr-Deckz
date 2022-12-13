@@ -1,0 +1,25 @@
+ <div class="container jumbotron">
+  <img src="./images/PokemonBanner.jpeg" alt="Pikachu" style="width:100%;height:auto">
+  </div>
+
+
+<h2>Pokedex</h2>
+
+
+
+<div class="row">
+ 
+
+    
+    {{#each pokedex as |card| }}
+        <div class="col-md-4 mb-2">
+            {{> poke-card card}}
+        </div>
+    {{/each}}
+</div>
+
+
+
+<div id="showcard"></div>
+<script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+<script src="./js/pokedex.js"></script>
